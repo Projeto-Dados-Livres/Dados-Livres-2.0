@@ -1,232 +1,241 @@
-# Dados Livres - Plataforma livre de dados abertos
+<div align="center">
 
-O **Dados Livres** é uma plataforma livre, sem fins lucrativos, para catalogação de fontes de dados abertos e aplicações cívicas por meio de colaboração coletiva. Um dos objetivos do projeto é criar um ambiente que facilite a atuação do público no controle social e na difusão dos dados abertos para os mais diversos fins, além disso o projeto dos dados livres conta como o alinhamento às diretrizes da Organização das Nações Unidas, ONU, tendo os ODS 10 e 16 como foco.
+<img src="dadoslivres-logo.png" alt="Logo do Dados Livres" width="180" />
 
-A ideia de desenvolver a plataforma Dados Livres surgiu em 2018, como um projeto de pesquisa no Instituto Federal de Ciência e Tecnologia do Rio Grande do Norte (IFRN). Mantido e fundado pela [Carolina Soares](https://gitlab.com/mariacarolinass) e por [Pedro Baesse](https://gitlab.com/pbaesse). O Dados Livres é disponibilizado como software livre, sob a [licença GNU GPLv3](https://gitlab.com/dados-livres/dados-livres/-/blob/master/LICENSE) e o seu código-fonte disponível aqui no [GitHub](https://github.com/Projeto-Dados-Livres/Dados-Livres), no [GitLab](https://gitlab.com/dados-livres/dados-livres/).
+# Dados Livres
 
-Alguns diferenciais do Dados Livres é a praticidade, pois suas fontes de dados abertos e aplicações cívicas são facilmente cadastradas na plataforma sem exigir nenhum conhecimento de código dos seus usuários. Outro diferencial é a ligação de fontes de dados abertos com as aplicações cívicas na sua página de perfil e vice-versa. Entre os planejamentos futuros do projeto é pretenso permitir cadastrar artigos científicos e notícias que utilizam de dados abertos.
+### Dados abertos só têm valor quando as pessoas conseguem encontrá-los e usá-los.
 
-A plataforma foi desenvolvida com a linguagem de programação Python juntamente ao Microframework Web Flask. Além disso, o projeto utiliza as tecnologias web HTML, CSS, JavaScript e o framework Bootstrap. [Saiba mais sobre o Dados Livres aqui!](https://dadoslivres.org/about)
+**Uma plataforma livre e colaborativa para catalogar fontes de dados abertos e aplicações cívicas.**
 
-**Visite o nosso site: [dadoslivres.org](https://dadoslivres.org/)**
+[![Licença: GPL v3](https://img.shields.io/badge/Licen%C3%A7a-GPLv3-blue.svg)](https://gitlab.com/dados-livres/dados-livres/-/blob/master/LICENSE)
+[![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Microframework-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![Telegram](https://img.shields.io/badge/Telegram-Comunidade-26A5E4?logo=telegram&logoColor=white)](https://t.me/dadoslivres)
+[![PRs bem-vindos](https://img.shields.io/badge/PRs-bem--vindos-brightgreen.svg)](#-como-contribuir)
 
-## Sumário
+[🌐 **Acessar a plataforma**](https://dadoslivres.org/) ·
+[📖 Sobre o projeto](https://dadoslivres.org/about) ·
+[🤝 Como contribuir](https://dadoslivres.org/how_to_contribute) ·
+[💬 Entrar na comunidade](https://t.me/dadoslivres)
 
-* [Como contribuir](#como-contribuir)
-* [Como instalar](#como-instalar)
-    * [Linux](#linux)
-    * [Mac](#mac)
-    * [Windows](#windows)
-    * [Bibliotecas do projeto](#bibliotecas-do-projeto)
-    * [Configurando o projeto](#configurando-o-projeto)
-    * [Rodando o projeto](#rodando-o-projeto)
-    * [Rodando com Docker Compose](#rodando-com-docker-compose)
-* [Lista de autores](#lista-de-autores)
-* [Licença](#licença)
-* [Contato](#contato)
-* [Redes sociais](#redes-sociais)
+</div>
 
-## Como contribuir
+---
 
-1. **Cadastro de fontes e aplicações**
+## 💡 Por que o Dados Livres existe?
 
-    Contribuia com o Dados Livres ajudando no cadastro de fontes de dados abertos ou aplicações cívicas. Primeiro é necessário ter um [cadastro de usuário](https://dadoslivers.org/auth/register_request) na plataforma, ou caso já tenha um cadastro, realizar o [login](https://dadoslivres.org/auth/login). Logo, preencher o forumário de cadastro da [fonte](https://dadoslivres.org/register_source) ou [aplicação](https://dadoslivres.org/register_software) que deseja cadastrar no Dados Livres .
-    
-2. **Código-fonte**
+Governos e organizações publicam cada vez mais dados abertos. O problema é que eles ficam **espalhados**, **difíceis de achar** e **desconectados** de quem realmente os usa na prática.
 
-    Novas funcionalidades, melhorias ou ideias de issues devem ser feitas aqui no [repositório do Dados Livres](https://gitlab.com/dados-livres/dados-livres). Confira o tópico de [como instalar](#como-instalar) o projeto!
+O **Dados Livres** resolve isso reunindo tudo em um só lugar:
 
-    **Utilize o Git para contribuir com o código:**
+- 🗂️ **Fontes de dados abertos**: de onde os dados vêm.
+- 🧩 **Aplicações cívicas**: o que as pessoas já constroem com esses dados.
+- 🔗 **A ligação entre os dois**: cada fonte mostra as aplicações que a utilizam, e cada aplicação mostra as fontes que ela consome.
 
-    Crie uma nova branch para a funcionalidade que irá desenvolver:
+Tudo isso feito **de forma colaborativa**, por qualquer pessoa, **sem precisar escrever uma linha de código**.
 
-    ```sh
-    git checkout -b "nome_da_branch"
-    ```
+> 🌍 O projeto está alinhado às diretrizes da ONU, com foco nos **ODS 10** (Redução das Desigualdades) e **ODS 16** (Paz, Justiça e Instituições Eficazes), facilitando o **controle social** e a difusão dos dados abertos para os mais diversos fins.
 
-    Adicione todos os arquivos criados ou editados:
+---
 
-    ```sh
-    git add nome_do_arquivo
-    ```
+## ✨ O que torna o Dados Livres diferente
 
-    Salve os arquivos:
+| | |
+|---|---|
+| 🖱️ **Cadastro sem código** | Qualquer pessoa registra fontes e aplicações por formulário, sem conhecimento técnico. |
+| 🔄 **Fontes ↔ Aplicações conectadas** | Navegue de uma fonte para os projetos que a usam, e vice-versa, direto no perfil. |
+| 🤝 **Curadoria coletiva** | O catálogo cresce com a contribuição da comunidade. |
+| 🆓 **Software livre de verdade** | Código aberto sob GPLv3, sem fins lucrativos. |
+| 🐳 **Fácil de rodar** | Suba o projeto local com `docker compose up` ou com um ambiente Python simples. |
 
-    ```sh
-    git commit -m "descreva o que editou ou criou"
-    ```
+### 🔭 No horizonte
 
-    Suba todas as alterações para o GitLab:
+- [ ] Cadastro de **artigos científicos** que utilizam dados abertos
+- [ ] Cadastro de **notícias** baseadas em dados abertos
 
-    ```sh
-    git push --set-upstream origin nome_da_branch
-    ```
-    Se quiser subir as alterações para o github:
-   ```sh
-    git push origin nome_da_branch
-    ```
+Quer ajudar a tirar algum desses itens do papel? Veja o [quadro de issues](https://gitlab.com/dados-livres/dados-livres/-/boards).
 
-4. **Saiba mais sobre como contribuir**
+---
 
-    - [Página de como contribuir na plataforma](https://dadoslivres.org/how_to_contribute)
-    - [Ideias de contribuição no quadro de tópicos (issues)](https://gitlab.com/dados-livres/dados-livres/-/boards)
+## 🚀 Comece em 2 minutos
 
-## Como instalar
+### Opção 1: Docker Compose (mais rápido)
 
-Pré-requisitos:
-
-- [Git](https://git-scm.com/downloads)
-- [Python3](https://www.python.org/downloads/)
-- [Pip](https://pip.pypa.io/en/stable/installation/)
-
-Primeiro faça um fork do projeto! Em seguida clone o repositório que você fez o fork:
+Pré-requisito: [Docker e o plugin docker compose](https://docs.docker.com/engine/install/).
 
 ```sh
-git clone [https://gitlab.com/seu-usuario/dados-livres](https://github.com/Projeto-Dados-Livres/Dados-Livres](https://github.com/Projeto-Dados-Livres/Dados-Livres.git)
-```
-
-Para entrar no repositório:
-
-```sh
-cd dados-livres
-```
-
-### Linux:
-
-Crie o ambiente virtual venv:
-
-```sh
-python3 -m venv venv
-```
-
-Se a sua distribuição Linux for derivada de Debian/Ubuntu e caso peça para instalar o **python3-venv** rode o comando `sudo apt-get install python3-venv` e depois repita `python3 -m venv venv`.
-
-Entre no ambiente virtual:
-
-```sh
-source venv/bin/activate
-```
-
-### Mac:
-
-Instale o virtualenv:
-
-```sh
-pip install virtualenv
-```
-
-Crie o ambiente virtual venv:
-
-```sh
-python3 -m venv venv
-```
-
-Entre no ambiente virtual:
-
-```sh
-source venv/bin/activate
-```
-
-### Windows:
-
-Instale o virtualenv:
-
-```sh
-pip install virtualenv
-```
-
-Crie o ambiente virtual venv:
-
-```sh
-python3 -m venv venv
-```
-
-Entre no ambiente virtual:
-
-```sh
-venv\Scripts\activate
-```
-
-### Bibliotecas do projeto 
-
-Agora, instale todas as dependências do projeto salvas no arquivo requirements.txt:
-
-```sh
-pip install -r requirements.txt
-```
-
-### Configurando o projeto
-
-Configure o banco de dados local:
-
-```sh
-flask db upgrade
-```
-
-### Rodando o projeto
-
-Para rodar a aplicação utilize o comando:
-
-```sh
-flask run
-```
-
-Acesse no seu navegador o seguinte endereço abaixo:
-
-```sh
-http://localhost:5000/
-```
-
-### Rodando com Docker Compose
-
-Pré-requisitos:
-
-- [Docker e docker compose plugin](https://docs.docker.com/engine/install/)
-
-Com o docker compose instalado e funcionando, entre na pasta do projeto e rode:
-
-```sh
+git clone https://github.com/Projeto-Dados-Livres/Dados-Livres.git
+cd Dados-Livres
 docker compose up -d
 ```
 
-Acesse o endereço da aplicação no navegador:
+Pronto! Acesse **http://localhost:5000** 🎉
+
+Para acompanhar os logs (encerre com `CTRL+C`):
 
 ```sh
-http://localhost:5000
+docker compose logs --follow
 ```
 
-Se quiser ver os logs da aplicação:
+### Opção 2: Ambiente Python local
+
+Pré-requisitos: [Git](https://git-scm.com/downloads), [Python 3](https://www.python.org/downloads/) e [Pip](https://pip.pypa.io/en/stable/installation/).
 
 ```sh
-docker compose logs --follow #Para encerrar o log, use o atalho CTRL+C
+# 1. Clone o repositório (idealmente, o seu fork)
+git clone https://github.com/Projeto-Dados-Livres/Dados-Livres.git
+cd Dados-Livres
+
+# 2. Crie e ative o ambiente virtual (veja o seu sistema abaixo)
+python3 -m venv venv
+
+# 3. Instale as dependências
+pip install -r requirements.txt
+
+# 4. Configure o banco de dados local
+flask db upgrade
+
+# 5. Rode a aplicação
+flask run
 ```
 
-## Lista de autores
+Acesse **http://localhost:5000** no navegador.
 
-- [Carolina Soares](https://mariacarolinass.github.io/carolinasoares/)
-- [Pedro Baesse](https://pbaesse.me/)
+<details>
+<summary><b>🐧 Linux</b></summary>
 
-## Licença
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
 
-O Dados Livres é Licenciado sob [Licença GPL-3.0](https://gitlab.com/dados-livres/dados-livres/-/blob/master/LICENSE).
+> Em distribuições derivadas de Debian/Ubuntu, se o sistema pedir o pacote **python3-venv**, rode `sudo apt-get install python3-venv` e repita o comando `python3 -m venv venv`.
 
-## Contato
+</details>
 
-Dados Livres:
+<details>
+<summary><b>🍎 macOS</b></summary>
 
-- Comunidade no Telegram: [@dadoslivres](https://t.me/dadoslivres)
+```sh
+pip install virtualenv
+python3 -m venv venv
+source venv/bin/activate
+```
 
-Mantedores do projeto:
+</details>
 
-- Telegram: [@carolsoaresm](https://t.me/carolsoaresm) | mcarolinasoares0@gmail.com
-- Telegram: [@pbaesse](https://t.me/pbaesse) | pbaesse@gmail.com
+<details>
+<summary><b>🪟 Windows</b></summary>
 
-## Redes sociais
+```sh
+pip install virtualenv
+python3 -m venv venv
+venv\Scripts\activate
+```
 
-- [LinkedIn](https://www.linkedin.com/company/dados-livres/)
-- [YouTube](https://www.youtube.com/channel/UCo1LRnYUpCXejZAckGvWmGA)
-- [Instagram](https://www.instagram.com/dadoslivres/)
-- [Twitter](https://twitter.com/dadoslivres)
-- [Facebook](https://www.facebook.com/dadoslivres)
+</details>
 
-![Logo Dados Livres](/dadoslivres-logo.png)
+---
+
+## 🤝 Como contribuir
+
+Toda ajuda é bem-vinda, e **você não precisa programar para contribuir**.
+
+### 📌 Sem código: ajude a construir o catálogo
+
+1. [Crie sua conta](https://dadoslivres.org/auth/register_request) (ou faça [login](https://dadoslivres.org/auth/login)).
+2. Cadastre uma [**fonte de dados abertos**](https://dadoslivres.org/register_source) ou uma [**aplicação cívica**](https://dadoslivres.org/register_software).
+3. Conhece alguém que faz projetos com dados abertos? Divulgue!
+
+### 💻 Com código: melhore a plataforma
+
+Novas funcionalidades, correções e ideias são feitas aqui, no [repositório do Dados Livres](https://gitlab.com/dados-livres/dados-livres). Para começar:
+
+1. **Faça um fork** do projeto e clone o seu fork (veja [Comece em 2 minutos](#-comece-em-2-minutos)).
+2. **Crie uma branch** para a sua alteração:
+   ```sh
+   git checkout -b nome_da_branch
+   ```
+3. **Adicione e salve** suas mudanças:
+   ```sh
+   git add nome_do_arquivo
+   git commit -m "descreva o que você editou ou criou"
+   ```
+4. **Envie** para o GitLab:
+   ```sh
+   git push --set-upstream origin nome_da_branch
+   ```
+   Ou, se estiver trabalhando pelo GitHub:
+   ```sh
+   git push origin nome_da_branch
+   ```
+5. **Abra um Merge Request** (GitLab) ou **Pull Request** (GitHub) descrevendo sua contribuição.
+
+### 🧭 Por onde começar?
+
+- 📋 [Quadro de issues](https://gitlab.com/dados-livres/dados-livres/-/boards): ideias e tarefas abertas
+- 📖 [Guia de contribuição na plataforma](https://dadoslivres.org/how_to_contribute)
+- 💬 [Comunidade no Telegram](https://t.me/dadoslivres): tire dúvidas e conheça outras pessoas contribuindo
+
+---
+
+## 🛠️ Tecnologias
+
+| Camada | Tecnologias |
+|---|---|
+| **Back-end** | Python + Flask |
+| **Front-end** | HTML, CSS, JavaScript e Bootstrap |
+| **Infra** | Docker Compose |
+
+---
+
+## 🌱 História
+
+O Dados Livres nasceu em **2018**, como um projeto de pesquisa no **Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)**. Hoje é mantido e foi fundado por:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://gitlab.com/mariacarolinass">
+        <b>Carolina Soares</b>
+      </a><br />
+      <a href="https://mariacarolinass.github.io/carolinasoares/">Site</a> ·
+      <a href="https://t.me/carolsoaresm">Telegram</a>
+    </td>
+    <td align="center">
+      <a href="https://gitlab.com/pbaesse">
+        <b>Pedro Baesse</b>
+      </a><br />
+      <a href="https://pbaesse.me/">Site</a> ·
+      <a href="https://t.me/pbaesse">Telegram</a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📣 Fale com a gente
+
+- 💬 **Comunidade:** [t.me/dadoslivres](https://t.me/dadoslivres)
+- ✉️ **Mantenedores:** [mcarolinasoares0@gmail.com](mailto:mcarolinasoares0@gmail.com) · [pbaesse@gmail.com](mailto:pbaesse@gmail.com)
+
+**Redes sociais:**
+[LinkedIn](https://www.linkedin.com/company/dados-livres/) ·
+[YouTube](https://www.youtube.com/channel/UCo1LRnYUpCXejZAckGvWmGA) ·
+[Instagram](https://www.instagram.com/dadoslivres/) ·
+[Twitter](https://twitter.com/dadoslivres) ·
+[Facebook](https://www.facebook.com/dadoslivres)
+
+---
+
+## 📄 Licença
+
+Distribuído sob a [Licença GPL-3.0](https://gitlab.com/dados-livres/dados-livres/-/blob/master/LICENSE). Isso significa que você pode usar, estudar, modificar e compartilhar o código, desde que mantenha a mesma liberdade para quem vier depois.
+
+<div align="center">
+
+**Se o Dados Livres é útil para você, deixe uma ⭐ no repositório e compartilhe com quem trabalha com dados abertos!**
+
+</div>
